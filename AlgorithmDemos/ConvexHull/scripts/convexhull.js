@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	var width = canvas.width;
 	var height = canvas.height;
 
-	var numDots = 60;
+	var numDots = 10;
 
 	//initialize dots array with 30 dots
 	var dots = [];
