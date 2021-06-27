@@ -76,7 +76,6 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Daniel Seetoh</div>
                 <div class="intro-heading">Hello World</div>
-                <!-- <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a> -->
             </div>
         </div>
     </header>
@@ -110,10 +109,22 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#grizzlygoals" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                        </div>
+                        <img src="img/portfolio/grizzlygoals.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>GrizzlyGoals</h4>
+                        <p class="text-muted">Goal Tracker</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#seetohblog" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <!-- <i class="fa fa-plus fa-3x"></i> -->
                             </div>
                         </div>
                         <img src="img/portfolio/seetohblog.png" class="img-responsive" alt="">
@@ -127,7 +138,6 @@
                     <a href="#algorithms" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <!-- <i class="fa fa-plus fa-3x"></i> -->
                             </div>
                         </div>
                         <img src="img/portfolio/AlgorithmScreenshot.png" class="img-responsive" alt="">
@@ -137,11 +147,12 @@
                         <p class="text-muted">Various algorithms displayed</p>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#tyrianmock" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <!-- <i class="fa fa-plus fa-3x"></i> -->
                             </div>
                         </div>
                         <img src="img/portfolio/TyrianMockScreenshot.png" class="img-responsive" alt="">
@@ -151,7 +162,6 @@
                         <p class="text-muted">Simple 2D game</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -265,6 +275,37 @@
 
                             <p>The process of creating this blogger was a very enriching one, in which I familiarised myself with a new framework (django), learned about the shortcomings of heroku(issues of storing static/media files), adopted best practices for serving such files as well as security measures that django provides, and the differences between development and production environments. The journey was not very smooth, but the couple of weeks spent on this project was well worth the experience. As a result, I now have my very own blog that I will update regularly at <a href="https://seetohblog.herokuapp.com/blogger/blog/Daniel">this site</a>!</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="grizzlygoals" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>GrizzlyGoals</h2>
+                            <p class="item-intro text-muted">A goal tracker with social media aspects</p>
+                            <a href="https://grizzlygoals.com">
+                            <img class="img-responsive img-centered" src="img/portfolio/grizzlygoals.png" alt="">
+                            </a>
+
+                            <p><a href="https://grizzlygoals.com">GrizzlyGoals</a> is a website that helps you track your goals. It came from the realization that most people have trouble sticking to their New Year's resolutions. We want to tackle the big goals at the start of the year, and this platform provides you the tools to track your progress towards these goals.</p>
+                            <p>There is the idea of radical accountability, where your friends can see the goals you've created for yourself, and see the progress you're making towards them. For goals which are more sensitive, you can make them private so only you can view them.</p>
+                            <p>You can also see and comment on your friends' goals, and if you see a goal that someone has made for themselves that you want to take on, you can easily duplicate their goal to your own page.</p>
+                            <p>This website was made using Java, Spring Boot, Typescript, React, BlueprintJs, MySQL, and hosted on AWS using Elastic Beanstalk, RDS, S3, CloudFront, Route53 etc. </p>
                         </div>
                     </div>
                 </div>
