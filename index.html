@@ -118,10 +118,10 @@
             previously worked at Grab (Singapore) and Palantir Technologies
             (London, UK), and am currently working on a project called
             <a
-              href="https://smallpage.io"
+              href="https://petshoot.ai"
               rel="noopener noreferrer"
               target="_blank"
-              >Smallpage.io</a
+              >petshoot.ai</a
             >!
           </p>
           <p class="text-center">
@@ -147,6 +147,22 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#petshoot" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content"></div>
+              </div>
+              <img
+                src="img/portfolio/petshoot.png"
+                class="img-responsive"
+                alt="PetShoot"
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>petshoot.ai</h4>
+              <p class="text-muted">Craft AI pet photoshoots</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#smallpage" class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content"></div>
@@ -154,11 +170,11 @@
               <img
                 src="img/portfolio/smallpage_frontpage.png"
                 class="img-responsive"
-                alt=""
+                alt="SmallPage"
               />
             </a>
             <div class="portfolio-caption">
-              <h4>Smallpage.io</h4>
+              <h4>smallpage.io</h4>
               <p class="text-muted">Easily host images and files</p>
             </div>
           </div>
@@ -389,6 +405,149 @@
             </div>
         </div>
     </div> -->
+
+    <div
+      class="portfolio-modal modal fade"
+      id="grizzlygoals"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>GrizzlyGoals</h2>
+                <p class="item-intro text-muted">A social goal tracker</p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://grizzlygoals.com"
+                >
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/portfolio/grizzlygoals.png"
+                    alt=""
+                  />
+                </a>
+                <p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://grizzlygoals.com"
+                    >GrizzlyGoals</a
+                  >
+                  is a website that helps you track your goals with friends. It
+                  came from the realization that most people have trouble
+                  sticking to their New Year's resolutions. We want to tackle
+                  the big goals at the start of the year, and this platform
+                  provides you the tools to track your progress towards these
+                  goals.
+                </p>
+                <p>
+                  It is based on the idea of radical accountability, where your
+                  friends can see the goals you've created for yourself, and see
+                  the progress you're making towards them. For goals which are
+                  more sensitive, you can make them private so only you can view
+                  them.
+                </p>
+                <p>
+                  You can also follow your friends, see and comment on your
+                  friends' goals, and if you see a goal that someone has made
+                  for themselves that you want to take on, you can easily
+                  duplicate their goal to your own page.
+                </p>
+                <p>
+                  This website was made using Java, Spring Boot, Typescript,
+                  React, Redux, React-Query, BlueprintJs, MySQL, and hosted on
+                  AWS using Elastic Beanstalk, RDS, S3, CloudFront, Route53 etc.
+                  The frontend does some optimizations to cut down on calls to
+                  the backend when data has not changed, hence reducing load on
+                  the servers. Authentication is done through JWTs.
+                </p>
+                <p>
+                  Check out my goals for 2021
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://grizzlygoals.com/u/danielseetoh/2021"
+                    >here</a
+                  >!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="petshoot"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>petshoot.ai</h2>
+                <p class="item-intro text-muted">Craft AI pet photoshoots</p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://petshoot.ai"
+                >
+                  <img
+                    class="img-responsive img-centered"
+                    src="img/portfolio/petshoot.png"
+                    alt=""
+                  />
+                </a>
+                <p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://petshoot.ai"
+                    >petshoot.ai</a
+                  >
+                  allows you to craft amazing pet photoshoots with the help of
+                  AI in seconds.
+                </p>
+                <p>
+                  Upload images of your pet to be turned into beautiful new
+                  photoshoots. You can even upload multiple images into the same
+                  frame, to be used as a base for new images.
+                </p>
+                <p>
+                  This website was made using NextJs, TailwindCSS, Typescript,
+                  Python/Docker/FastAPI for image processing server, HuggingFace
+                  diffusers/esrgan etc for image generation and post processing,
+                  and some interesting generation strategies. The current
+                  infrastructure uses DigitalOcean, Supabase, HuggingFace, and
+                  Stripe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Portfolio Modal 4 -->
     <div
