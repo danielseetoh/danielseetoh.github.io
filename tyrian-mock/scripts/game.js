@@ -705,7 +705,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // takes in probability in [0,1] and checks if it passes
   function checkProbability(probabilty) {
-    return Math.random() * 1000 < probabilty * 1000;
+    return Math.random() < probabilty;
   }
 
   draw();
