@@ -5,6 +5,7 @@ const DEFAULT_HEALTH = 100;
 // explosions
 const EXPLOSION_WIDTH = 40;
 const EXPLOSION_HEIGHT = 40;
+const EXPLOSION_FRAMES = 7;
 
 // own ship
 const DEFAULT_SHOT_INTERVAL = 300;
@@ -90,8 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let gameOver = false;
 
   //initialize explosions
-  let explosionArray = [];
-  let totalFrames = 7;
+  let explosionArray = []; // [projectile, sprite index][]
   let explosion = new Image();
   explosion.src = "sprite/particle_largeBall1.png";
 
@@ -116,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //enemyShip attributes
   let enemyShipArray = [];
   let enemyShipSpawnAwaiting = false;
-  let enemyFiring = false;
   let enemyShip = new Image();
   enemyShip.src = "img/enemy1.png";
 
@@ -630,7 +629,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let obj = explosionArray[i][0];
       ctx.drawImage(
         explosion,
-        EXPLOSION_WIDTH * explosionArray[i][1],
+        EXPLOSION_WIDTH * explosionArray[i][1], // draw out sprite
         0,
         EXPLOSION_WIDTH,
         EXPLOSION_HEIGHT,
@@ -640,7 +639,7 @@ document.addEventListener("DOMContentLoaded", function () {
         0.75 * obj.yDimension
       );
       explosionArray[i][1] += 1;
-      if (explosionArray[i][1] < totalFrames) {
+      if (explosionArray[i][1] < EXPLOSION_FRAMES) {
         tempExplosionArray.push(explosionArray[i]);
       }
     }
